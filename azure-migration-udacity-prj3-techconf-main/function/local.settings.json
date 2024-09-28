@@ -2,14 +2,14 @@
   "IsEncrypted": false,
   "Values": {
     "FUNCTIONS_WORKER_RUNTIME": "python",
-    "FUNCTIONS_EXTENSION_VERSION": "~3",
-    "AzureWebJobsStorage": "DefaultEndpointsProtocol=https;EndpointSuffix=core.windows.net;AccountName=congdinh2023prj3;AccountKey=hPotVt/Mppu007p9HGpyh6IobBR9qZvqFp+oA3RqON2Kn5xY4E+qRus1nanasEh2WElGf0NkN/oM+AStxc6hcw==",
-    "APPINSIGHTS_INSTRUMENTATIONKEY": "dc28ad51-6d8b-4f6c-b670-a2d4af2e6588",
+    "FUNCTIONS_EXTENSION_VERSION": "~4",
+    "AzureWebJobsStorage": "DefaultEndpointsProtocol=https;AccountName=khanhhoangprj3;AccountKey=qvI2sp5JCSK5roImZiIm9RDjhNqWJ7kOBFV7mxFe1OGMVn9gmbHetdu1S1Nap0pXhMl32dYSZ8wa+AStHvEPkQ==;EndpointSuffix=core.windows.net",
+    "APPINSIGHTS_INSTRUMENTATIONKEY": "eb835288-f70d-492d-be63-fe52f4f0e562",
     "WEBSITE_MOUNT_ENABLED": "1",
-    "techconf_SERVICEBUS": "Endpoint=sb://techconf.servicebus.windows.net/;SharedAccessKeyName=RootManageSharedAccessKey;SharedAccessKey=Jt6/lmRItFoZniHhkYDDvt2QG/1esjiuC+ASbKMO7II=",
+    "techconf_SERVICEBUS": "Endpoint=sb://techconf.servicebus.windows.net/;SharedAccessKeyName=RootManageSharedAccessKey;SharedAccessKey=/TfPtMQ1JB+DLJBbMS36TwWGN7wL3WLcm+ASbIlfJ2w=",
     "ADMIN_EMAIL_ADDRESS": "admin@gmail.com",
     "SENDGRID_API_KEY": "get_from_sendgrid",
-    "WEBSITE_CONTENTAZUREFILECONNECTIONSTRING": "DefaultEndpointsProtocol=https;EndpointSuffix=core.windows.net;AccountName=congdinh2023prj3;AccountKey=hPotVt/Mppu007p9HGpyh6IobBR9qZvqFp+oA3RqON2Kn5xY4E+qRus1nanasEh2WElGf0NkN/oM+AStxc6hcw==",
+    "WEBSITE_CONTENTAZUREFILECONNECTIONSTRING": "DefaultEndpointsProtocol=https;AccountName=khanhhoangprj3;AccountKey=qvI2sp5JCSK5roImZiIm9RDjhNqWJ7kOBFV7mxFe1OGMVn9gmbHetdu1S1Nap0pXhMl32dYSZ8wa+AStHvEPkQ==;EndpointSuffix=core.windows.net",
     "WEBSITE_CONTENTSHARE": "techconf-functionsbd04017b0a58"
   }
 }
