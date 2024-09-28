@@ -13,9 +13,9 @@ def main(msg: func.ServiceBusMessage):
     logging.info('Python ServiceBus queue trigger processed message: %s',notification_id)
     print(notification_id)
 
-    conn = psycopg2.connect(user="congdinh2023@techconf-congdinh2023",
-                                    password="CongDinh@2023",
-                                    host="techconf-congdinh2023.postgres.database.azure.com",
+    conn = psycopg2.connect(user="azureuser@techconf-k",
+                                    password="Kkhanhss#154",
+                                    host="techconf-k.postgres.database.azure.com",
                                     port="5432",
                                     database="techconfdb")
     cursor = conn.cursor()
