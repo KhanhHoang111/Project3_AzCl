@@ -6,7 +6,7 @@ name: Build and deploy Python app to Azure Web App - techconf-free
 
 env:
   AZURE_WEBAPP_NAME: techconf-free   # set this to your application's name
-  PYTHON_VERSION: '3.11'               # set this to the Python version to use
+  PYTHON_VERSION: '3.8'               # set this to the Python version to use
   
 on:
   push:
@@ -24,7 +24,7 @@ jobs:
       - name: Set up Python version
         uses: actions/setup-python@v5
         with:
-          python-version: '3.11'
+          python-version: '3.8'
 
       - name: Create and start virtual environment
         run: |
@@ -68,6 +68,6 @@ jobs:
         uses: azure/webapps-deploy@v3
         id: deploy-to-webapp
         with:
-          app-name: 'techconf-free'
+          app-name: ${{ env.AZURE_WEBAPP_NAME }}
           slot-name: 'Production'
           publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_563A4E9BA7704D16A0F523ECA06EC52F }}
