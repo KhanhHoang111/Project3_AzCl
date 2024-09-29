@@ -42,13 +42,16 @@ jobs:
         run: pip install -r ./azure-migration-udacity-prj3-techconf-main/web/requirements.txt
 
       # Optional: Add a step to run tests here (PyTest, Django test suites, etc.)
-
+   
+      - name: Zip artifact for deployment
+        run: zip release.zip ./azure-migration-udacity-prj3-techconf-main/web/ -r
+        
       - name: Upload artifact for deployment jobs
         uses: actions/upload-artifact@v4
         with:
           name: python-application
           path: |
-            ./azure-migration-udacity-prj3-techconf-main/web/
+            ./azure-migration-udacity-prj3-techconf-main/web/release.zip
             !venv/
   deploy:
     runs-on: ubuntu-latest
