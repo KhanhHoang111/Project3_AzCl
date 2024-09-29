@@ -46,9 +46,9 @@ jobs:
       - name: Upload artifact for deployment jobs
         uses: actions/upload-artifact@v4
         with:
-          name: python-app
+          name: python-application
           path: |
-            ./azure-migration-udacity-prj3-techconf-main/web/
+            ./azure-migration-udacity-prj3-techconf-main/web
             !venv/
   deploy:
     runs-on: ubuntu-latest
@@ -61,8 +61,8 @@ jobs:
       - name: Download artifact from build job
         uses: actions/download-artifact@v4
         with:
-          name: python-app
-          path: ./application.py
+          name: python-application
+          path: ./azure-migration-udacity-prj3-techconf-main/web
 
       - name: 'Deploy to Azure Web App'
         id: deploy-to-webapp
