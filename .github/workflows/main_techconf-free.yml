@@ -4,6 +4,10 @@
 
 name: Build and deploy Python app to Azure Web App - techconf-free
 
+env:
+  AZURE_WEBAPP_NAME: techconf-free   # set this to your application's name
+  PYTHON_VERSION: '3.11'               # set this to the Python version to use
+  
 on:
   push:
     branches:
