@@ -65,7 +65,7 @@ jobs:
           path: ./azure-migration-udacity-prj3-techconf-main/web/
           
       - name: Unzip artifact for deployment
-        run: unzip release.zip
+        run: unzip ./azure-migration-udacity-prj3-techconf-main/web/release.zip
 
       - name: 'Deploy to Azure Web App'
         id: deploy-to-webapp
