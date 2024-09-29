@@ -62,7 +62,7 @@ jobs:
         uses: actions/download-artifact@v4
         with:
           name: python-app
-          path: ./azure-migration-udacity-prj3-techconf-main/web/
+          path: ./azure-migration-udacity-prj3-techconf-main/web/application.py
 
       - name: 'Deploy to Azure Web App'
         id: deploy-to-webapp
