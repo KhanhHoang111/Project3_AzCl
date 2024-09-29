@@ -48,7 +48,7 @@ jobs:
         with:
           name: python-application
           path: |
-            ./azure-migration-udacity-prj3-techconf-main/web
+            ./azure-migration-udacity-prj3-techconf-main/web/
             !venv/
   deploy:
     runs-on: ubuntu-latest
@@ -62,7 +62,7 @@ jobs:
         uses: actions/download-artifact@v4
         with:
           name: python-application
-          path: ./azure-migration-udacity-prj3-techconf-main/web
+          path: ./azure-migration-udacity-prj3-techconf-main/web/
 
       - name: 'Deploy to Azure Web App'
         id: deploy-to-webapp
